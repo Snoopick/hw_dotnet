@@ -11,50 +11,50 @@ namespace Task1
         static void Main(string[] args)
         {
             //явное преобразование типов
-            double a1 = 1234.7;
-            int b1 = (int)a1;
+            double doubleValue = 1234.7;
+            int intValue = (int)doubleValue;
 
             Console.WriteLine("Explicit type conversion 1:");
-            Console.WriteLine("double a1 = 1234.7, int b1 = (int)a1;");
-            Console.WriteLine("Result is: " + b1);
+            Console.WriteLine("double doubleValue = 1234.7, int intValue = (int)doubleValue;");
+            Console.WriteLine("Result is: " + intValue);
             Console.WriteLine("__________________________________________");
 
 
-            byte c1 = 2;
-            sbyte d1 = (sbyte)c1;
+            byte byteValue = 2;
+            sbyte sbyteValue = (sbyte)byteValue;
 
             Console.WriteLine("Explicit type conversion 2:");
-            Console.WriteLine("byte c1 = 2, char d1 = (char)c1;");
-            Console.WriteLine("Result is: " + d1);
+            Console.WriteLine("byte byteValue = 2, char sbyteValue = (sbyte)byteValue;");
+            Console.WriteLine("Result is: " + sbyteValue);
             Console.WriteLine("__________________________________________");
 
 
-            short e1 = 45;
-            byte f1 = (byte)e1;
+            short shortValue = 45;
+            byte byteValue2 = (byte)shortValue;
 
             Console.WriteLine("Explicit type conversion 3:");
-            Console.WriteLine("short e1 = 45, byte f1 = (byte)e1;");
-            Console.WriteLine("Result is: " + f1);
+            Console.WriteLine("short shortValue = 45, byte byteValue2 = (byte)shortValue;");
+            Console.WriteLine("Result is: " + byteValue2);
             Console.WriteLine("__________________________________________");
 
 
             //неявное преобразование типов
             Console.WriteLine("");
 
-            byte a2 = 4;
-            int b2 = a2 + 20;
+            byte byteValue3 = 4;
+            int intValue3 = byteValue3 + 20;
 
             Console.WriteLine("Implicit type conversion 1:");
-            Console.WriteLine("byte a2 = 4, int b2 = a2 + 20;");
-            Console.WriteLine("Result is: " + b2);
+            Console.WriteLine("byte byteValue3 = 4, int intValue3 = byteValue3 + 20;");
+            Console.WriteLine("Result is: " + intValue3);
             Console.WriteLine("__________________________________________");
 
-            int c2 = 0123456789;
-            long d2 = c2;
+            int intValue4 = 0123456789;
+            long longValue4 = intValue4;
 
             Console.WriteLine("Implicit type conversion 2:");
-            Console.WriteLine("int c2 = 0123456789, long d2 = c2;");
-            Console.WriteLine("Result is: " + d2);
+            Console.WriteLine("int intValue4 = 0123456789, long longValue4 = intValue4;");
+            Console.WriteLine("Result is: " + longValue4);
             Console.WriteLine("__________________________________________");
 
 
@@ -70,24 +70,24 @@ namespace Task1
             //boxing
             Console.WriteLine("");
 
-            int a3 = 123;
-            object b3 = a3;
+            int intValue5 = 123;
+            object objectValue5 = intValue5;
 
             Console.WriteLine("Boxing:");
-            Console.WriteLine("int a3 = 123, object b3 = a3;");
-            Console.WriteLine("Result is: " + b3);
+            Console.WriteLine("int intValue5 = 123, object objectValue5 = intValue5;");
+            Console.WriteLine("Result is: " + objectValue5);
             Console.WriteLine("__________________________________________");
 
 
             //unboxing
             Console.WriteLine("");
 
-            object a4 = 123;
-            int b4 = (int)a4;
+            object objectValue6 = 123;
+            int intValue6 = (int)objectValue6;
 
             Console.WriteLine("Unboxing:");
-            Console.WriteLine("object a4 = 123, int b4 = (int)a4;");
-            Console.WriteLine("Result is: " + b4);
+            Console.WriteLine("object objectValue6 = 123, int intValue6 = (int)objectValue6;");
+            Console.WriteLine("Result is: " + intValue6);
             Console.WriteLine("__________________________________________");
 
 
