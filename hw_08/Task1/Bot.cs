@@ -4,7 +4,6 @@ using System.Text;
 
 namespace Task1 {
     public class Bot {
-
         public string Ask(string question) {
             if (question.Equals("")) {
                 Console.WriteLine("Oops, something went wrong");

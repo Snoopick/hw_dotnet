@@ -6,9 +6,15 @@ namespace Task1 {
         Bot bot = new Bot();
         Helpers helper = new Helpers();
         
-        bool _userHaveBagage = true;
-        bool _userHaveHandBagage = true;
-        int _userPlace = 0;
+        bool _userHaveBagage;
+        bool _userHaveHandBagage;
+        int _userPlace;
+
+        public CheckIn() {
+            this._userHaveBagage = true;
+            this._userHaveHandBagage = true;
+            this._userPlace = 0;
+        }
 
         public void Run (bool preOrderCheckin = false, string userFullName = "", string userPassportNum = "") {
             if (preOrderCheckin) {
