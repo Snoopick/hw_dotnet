@@ -4,7 +4,7 @@ namespace Task1 {
     public class Security {
         Bot bot = new Bot();
         Helpers helper = new Helpers();
-        public int _storyMode = 0;
+        private int _storyMode = 0;
 
         public void Run() {
             if (this.SecurityStage()) {
